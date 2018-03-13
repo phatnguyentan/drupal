@@ -1,0 +1,10 @@
+global-styling:
+  version: 1.x
+  css:
+    base:
+      css/base/base.css: {}
+      css/base/tachyons.min.css: {}
+    layout:
+      css/layout/home.css: {}
+  js:
+    js/common.js: {}

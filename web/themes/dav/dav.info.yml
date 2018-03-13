@@ -19,9 +19,9 @@ core: 8.x
 # version: 8.x-1.0
 
 # A list of libraries (which can contain both CSS and JavaScript assets) to add to all pages where the theme is active. Read more about themes and asset libraries.
-# libraries:
-#   - dav/global-styling
- 
+libraries:
+  - dav/global-styling
+
 # base theme: classy
 # regions:
 #   header: Header

@@ -32,12 +32,12 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes }}>
+      <ul{{ attributes.addClass(['list', 'pl0', 'dt']) }}>
     {% else %}
       <ul>
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes }}>
+      <li{{ item.attributes.addClass(['dtc', 'pa2']) }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

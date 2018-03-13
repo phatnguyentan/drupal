@@ -15,7 +15,9 @@
  */
 #}
 {% if content %}
-  <div{{ attributes }}>
+  <div{{ attributes }} class="flex">
+    <div class="outline w-25 pa3 mr2"></div>
     {{ content }}
+    <div class="outline w-25 pa3 mr2"></div>
   </div>
 {% endif %}

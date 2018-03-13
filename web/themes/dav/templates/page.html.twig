@@ -46,28 +46,21 @@
  */
 #}
 <div class="layout-container">
-
-  === Header ===
-  <header role="banner">
+  <header role="banner" class="debug debug-grid">
     {{ page.header }}
   </header>
 
-  === Menu ===
   {{ page.primary_menu }}
 
-  === Secondary Menu ===
   {{ page.secondary_menu }}
 
-  === Breadcrumb ===
   {{ page.breadcrumb }}
 
-  === Highlighted ===
   {{ page.highlighted }}
 
   {{ page.help }}
 
   <main role="main">
-    === Content ===
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -85,12 +78,10 @@
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
-
   </main>
 
   {% if page.footer %}
     <footer role="contentinfo">
-      === Footer ===
       {{ page.footer }}
     </footer>
   {% endif %}
