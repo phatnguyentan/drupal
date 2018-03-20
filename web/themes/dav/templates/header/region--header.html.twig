@@ -15,7 +15,13 @@
  */
 #}
 {% if content %}
-  <div{{ attributes }}>
+  <div{{ attributes.addClass(['flex']) }}>
+    <div class="w-25">
+
+    </div>
     {{ content }}
+    <div class="w-25">
+
+    </div>
   </div>
 {% endif %}

@@ -21,23 +21,25 @@
   {{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
+    <div class="container flex">
+      {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first w-25" role="complementary">
         {{ page.sidebar_first }}
       </aside>
-    {% endif %}
+      {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+      <div class="layout-content w-50">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second w-25" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
+
   </main>
 
   {% if page.footer %}
